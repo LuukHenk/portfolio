@@ -2,14 +2,15 @@
 Current portfolio version: 0.0.0
 
 ## Todo
-- Add more information to the introcution section of the index html
 - Give a standard style to the index html page
+- Add professional skills and extra-curricular achievements
+- Add more information to the introcution section of the index html
 
 ## In progress
-- Basic setup for the index HTML page
 
 ## Finished
-
+- Basic setup for the index HTML page
 
 # Ideas
 - Add hyperlinks to online course locations
+- Make a page per work experience?
