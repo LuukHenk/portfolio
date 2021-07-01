@@ -1,0 +1,84 @@
+{% load static %}
+
+<!-- https://manparvesh.com/ -->
+<!-- https://themes.3rdwavemedia.com/instance/bs5/resume.html -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			  content="width=device-width, initial-scale=1.0">
+		<title>Portfolio Luuk Perdaems</title>
+		<link rel="icon" type="image/png" href="{% static 'images/browser_icon.png' %}">
+
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+		<script src="{% static 'js/menu.js' %}"></script>
+	</head>
+
+	<body>
+		<div class="banner">
+			<div class="items__banner">
+				<h2 class="title__banner">Luuk Perdaems</h2>
+
+				<div class="pages__banner">
+					<div id="menu" class="menu__banner">
+						<img src="{% static 'images/menu.svg' %}">
+					</div>
+					<div class="obj__banner selected__banner">
+						<span class="link__banner">
+							<span class="text__banner">About me</span>
+						</span>
+					</div>
+					<div class="obj__banner">
+						<a href="{% url 'myportfolio:resume' %}" class="link__banner">
+							<span class="text__banner">Resume</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="websites__banner">
+					<div class="obj__banner ext_obj__banner">
+						<a class="link__banner" href="https://github.com/luukhenk">
+							<img class="text__banner" src="{% static 'images/github.svg' %}">
+						</a>
+					</div>
+					<div class="obj__banner ext_obj__banner">
+						<a class="link__banner" href="https://www.linkedin.com/in/luukperdaems/">
+							<img class="text__banner" src="{% static 'images/linkedin.svg' %}">
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="menu_objs">
+			<div class="menu_obj__banner selected_menu__banner">
+				<span class="link__banner">
+					<span class="text__banner">About me</span>
+				</span>
+			</div>
+			<div class="menu_obj__banner">
+				<a href="{% url 'myportfolio:resume' %}" class="link__banner">
+					<span class="text__banner">Resume</span>
+				</a>
+			</div>
+		</div>
+
+		<div id="biography">
+			<div class="image_area__biography">
+				<img src="{% static 'images/profile_image.jpg' %}">
+			</div>
+
+			<div class="text_area__biography">
+				<h1 class="title__biography">Biography</h1>
+				<span class="text__biography">{{ biography_text|safe }}</span>
+			</div>
+		</div>
+
+		<div id="projects">
+		</div>
+
+	</body>
+</html>

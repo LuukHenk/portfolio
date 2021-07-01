@@ -1,0 +1,204 @@
+
+{% load static %}
+
+<!-- https://manparvesh.com/ -->
+<!-- https://themes.3rdwavemedia.com/instance/bs5/resume.html -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			  content="width=device-width, initial-scale=1.0">
+		<title>Resume Luuk Perdaems</title>
+		<link rel="icon" type="image/png" href="{% static 'images/browser_icon.png' %}">
+
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+		<script src="{% static 'js/menu.js' %}"></script>
+	</head>
+
+	<body>
+		<div class="banner">
+			<div class="items__banner">
+
+				<div class="pages__banner">
+					<div id="menu" class="menu__banner">
+						<img src="{% static 'images/menu.svg' %}">
+					</div>
+					<div class="obj__banner">
+						<a href="{% url 'myportfolio:index' %}" class="link__banner">
+							<span class="text__banner">About me</span>
+						</a>
+					</div>
+					<div class="obj__banner selected__banner">
+						<span class="link__banner">
+							<span class="text__banner">Resume</span>
+						</span>
+					</div>
+				</div>
+
+				<div class="websites__banner">
+					<div class="obj__banner ext_obj__banner">
+						<a class="link__banner" href="https://github.com/luukhenk">
+							<img class="text__banner" src="{% static 'images/github.svg' %}">
+						</a>
+					</div>
+					<div class="obj__banner ext_obj__banner">
+						<a class="link__banner" href="https://www.linkedin.com/in/luukperdaems/">
+							<img class="text__banner" src="{% static 'images/linkedin.svg' %}">
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="menu_objs">
+			<div class="menu_obj__banner">
+				<a href="{% url 'myportfolio:index' %}" class="link__banner">
+					<span class="text__banner">About me</span>
+				</a>
+			</div>
+			<div class="menu_obj__banner selected_menu__banner">
+				<span class="link__banner">
+					<span class="text__banner">Resume</span>
+				</span>
+			</div>
+		</div>
+
+		<div id="resume">
+			<div class="resume_page__resume">
+				<div class="page_header__resume">
+					<img class="profile_img__resume" src="{% static 'images/profile_image.jpg' %}">
+					<div class="about_me__resume">
+						<h1>Luuk Perdaems</h1>
+						<div class="contacting__resume">
+							<div class="contact_method__resume">
+								<img src="{% static 'images/email_wt.svg' %}">
+								<span>Luukperdaems@hotmail.com</span>
+							</div>
+							<div class="contact_method__resume">
+								<img src="{% static 'images/github_wt.svg' %}">
+								<a href="http://www.Github.com/LuukHenk">Github.com/LuukHenk</a>
+							</div>
+							<div class="contact_method__resume">
+								<img src="{% static 'images/linkedin_wt.svg' %}">
+								<a href="https://www.linkedin.com/in/luukperdaems/">Linkedin.com/in/luukperdaems/</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="page_body__resume">
+					<div class="wide_column__resume column__resume">
+
+						<div class="wide_item__resume working_exp__resume">
+							<h3 class="item_header__resume">Working experiences</h3>
+							<div class="activity__resume">
+								<h4 class="working_exp_title__resume">Full-stack developer &#38;<br>Bioinformatician</h4>
+								<span class="working_exp_loc__resume">Utrecht University (MSc. intern)<br>Utrecht</span>
+								<span class="working_exp_subtitle__resume">March 2021 - Juli 2021</span>
+								<span class="working_exp_text__resume">
+									Building a phosphorylation site detection database using Django with a data importer
+									(FTP to MySQL via Python) and maintainer, and a GUI with search page and integrated
+									bioinformatic tools (‘HMMER’).
+								</span>
+								<div class="working_exp_skills__resume">
+									<div class="working_exp_skills_header__resume">Technologies used:</div>
+									<div class="working_exp_skill__resume">Python (Django)</div>
+									<div class="working_exp_skill__resume">JavaScript</div>
+									<div class="working_exp_skill__resume">HTML/CSS</div>
+									<div class="working_exp_skill__resume">MySQL/SQLite</div>
+									<div class="working_exp_skill__resume">Bash/Shell</div>
+									<div class="working_exp_skill__resume">HMMER</div>
+								</div>
+							</div>
+
+							<div class="activity__resume">
+								<h4 class="working_exp_title__resume">
+									Bioinformatician &#38;<br>Biomedical researcher
+								</h4>
+								<span class="working_exp_loc__resume">Erasmus MC (BSc. intern)<br>Rotterdam</span>
+								<span class="working_exp_subtitle__resume">September 2018 - Augustus 2019</span>
+								<span class="working_exp_text__resume">
+									Identification and validation of SF3B1-associated aberrant splicing events using
+									bioinformatics and biomedical research.
+								</span>
+								<div class="working_exp_skills__resume">
+									<div class="working_exp_skills_header__resume">Technologies used:</div>
+									<div class="working_exp_skill__resume">R</div>
+									<div class="working_exp_skill__resume">Python</div>
+									<div class="working_exp_skill__resume">Bash</div>
+									<div class="working_exp_skill__resume">RNA isolation</div>
+									<div class="working_exp_skill__resume">PCR</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="wide_item__resume">
+							<h3 class="item_header__resume">Education</h3>
+							<div class="activity__resume">
+								<h4 class="working_exp_title__resume">Bioinformatics &#38; biocomplexity</h4>
+								<span class="working_exp_loc__resume">Utrecht University, Utrecht</span>
+								<span class="working_exp_subtitle__resume">September 2020 - Juli 2021</span>
+								<span class="working_exp_text__resume">
+									Completed 18.5 credits towards a MSc.
+									Did a major internship in database- and front-end development.
+								</span>
+							</div>
+
+							<div class="activity__resume">
+								<h4 class="working_exp_title__resume">Biology and medical laboratory research</h4>
+								<span class="working_exp_loc__resume">Avans Hogeschool<br>Breda</span>
+								<span class="working_exp_subtitle__resume">September 2015 - Augustus 2019</span>
+								<span class="working_exp_text__resume">
+									Earned the degree Bachelor of Science (BSc.) in Augustus 2019.
+									Did a major and minor bioinformatics internship at Erasmus MC Rotterdam,
+									minor in bioinformatics (GPA 8.5) and a specialisation in biotechnology.
+									Graduated with a grade point average of 7.5
+								</span>
+							</div>
+						</div>
+
+
+						<div class="wide_item__resume">
+							<h3 class="item_header__resume">Extra-curricular activities</h3>
+							<div class="activity__resume">
+								<span class="working_exp_text__resume ">
+									<div class="other_activity__resume">
+										<b>Space invaders -</b> Made my own version of the Space Invaders game in Lua
+									</div>
+									<div class="other_activity__resume">
+										<b>2048 solver -</b> Built the 2048 game in Python3
+										and added an algorithm that can win the game
+									</div>
+									<div class="other_activity__resume">
+										<b>Dot files -</b> Made my oww personalized configuration setup for Linux Ubuntu
+									</div>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="small_column__resume column__resume">
+						<div class="small_item__resume">
+							<h3>Skills</h3>
+						</div>
+						<div class="small_item__resume">
+							<h3>Education</h3>
+						</div>
+						<div class="small_item__resume">
+							<h3>Extra-curricular achievements</h3>
+						</div>
+						<div class="small_item__resume">
+							<h3>Interests</h3>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>
+
